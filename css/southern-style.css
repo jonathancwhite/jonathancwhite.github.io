@@ -1,0 +1,472 @@
+/* GLOBAL */
+body{
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.5;
+    font-size: 17px;
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #111111;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: #00aeef 3px solid;
+}
+
+.logo img {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 30%;
+    width: 30%;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-links{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #111111;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger {
+        margin-right: 20px;
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+/* BODY STYLES */
+
+/* FEATURE AREA */
+.home-feature {
+    background: url(../img/cross-fit-tire-lift.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    position: relative;
+    max-width: 1520px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.hero-box-txtwrap {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0px, -50%);
+    margin-left: 90px;
+}
+
+.hero-banner-txt {
+    color: black;
+    font-size: 18px;
+    margin: 10px 0 20px 0;
+}
+
+.hero-txt {
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.hero-banner-buttons {
+    box-sizing: border-box !important;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.hero-banner-buttons a {
+    display: inline-block;
+    padding: 10px 25px;
+    font-weight: bold;
+    border: 1px solid #00aeef;
+    background-color: #00aeef;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+/* PRODUCT HIGHLIGHT */
+.highlight-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.product-box {
+    text-align: center;
+    background-color: #ebebeb;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.product-box img{
+    height: 300px;
+    width: 300px;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: all 0.3s;
+    transform: scale(1);
+}
+
+.product-box:hover img {
+    transform: scale(1.1);
+}
+
+.product-box p{
+    text-align: center;
+    padding-top: 5px;
+}
+
+/* Brand Video */
+
+.second-sec-title {
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 30px;
+    padding: 20px 0;
+}
+
+#brand-video {
+    width: 80%;
+    height: auto;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+}
+
+/* Three Steps For Your Health */
+
+.approach-title {
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 30px;
+    padding: 10px 0;
+}
+
+.our-approach {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.approach-hover-detail {
+    height: 300px;
+    width: 0px;
+    background: rgba(53, 143, 216, 0.705);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.1s ease-in;
+    transition-delay: .1s;
+}
+
+.three-steps:hover .approach-hover-detail{
+    width: 300px;
+}
+
+.three-steps {
+    text-align: center;
+    background-color: #ebebeb;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.three-steps img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.three-steps a{
+    text-decoration: none;
+    color: black;
+}
+
+.three-steps p{
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Instagram Section */
+
+.instagram-title {
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 30px;
+    margin-top: 30px;
+    padding: 20px 0;
+}
+
+.instagram-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    grid-gap: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.ig-picture-box:hover .ig-hover-detail{
+    width: 300px;
+}
+
+.ig-hover-detail {
+    height: 300px;
+    width: 0px;
+    background: rgba(53, 143, 216, 0.705);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.1s ease-in;
+    transition-delay: .1s;
+}
+
+.ig-picture-box img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.ig-hover-detail i{
+    text-align: center;
+    color: white;
+}
+
+/* Store Locations */
+
+.store-locations {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    grid-gap: 5px;
+    margin: 0 20px 20px 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.stores-title {
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 30px;
+    margin-top: 30px;
+    padding: 20px 0;
+}
+
+.stores {
+    background-color: #ebebeb;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.stores img{
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+}
+
+.stores h4 {
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+.stores h6 {
+    font-size: 18px;
+}
+
+#phone-number {
+    margin-top: -10px;
+}
+
+/* FOOTER */
+
+footer {
+    border-top: #00aeef 3px solid;
+    background: black;
+    color: white;
+    min-height: 12vh;
+    padding: 10px 30px 10px 30px;
+}
+
+.mission-statement {
+    display: grid;
+    max-width: 70%;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+}
+
+.mission-statement .left h5 {
+    font-size: 16px;
+    color: grey;
+    text-transform: uppercase;
+}
+
+.mission-statement .left{
+    font-size: 14px;
+    width: 60%;
+}
+
+.mission-statement .middle h5 {
+    font-size: 16px;
+    color: grey;
+    text-transform: uppercase;
+}
+
+.mission-statement .middle{
+    font-size: 14px;
+    width: 60%;
+}
+
+.mission-statement .right h5 {
+    font-size: 16px;
+    color: grey;
+    text-transform: uppercase;
+}
+
+.mission-statement .right{
+    font-size: 14px;
+    width: 60%;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+
+/*-------------------------- SUPPLEMENT PAGE --------------------------*/
+
+.under-construction {
+    display: block;
+    margin: auto;
+    width: 50%;
+    margin-top: 100px;
+}
+
+.under-construction img {
+    max-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+}
+
+.under-construction h1 {
+    text-align: center;
+}

@@ -7,57 +7,112 @@
     <meta name="keywords" content="html, css, javascript, jonathan white, web development" />
     <meta name="author" content="Jonathan White" />
     <title>Jonathan White | Welcome</title>
-    <link rel="stylesheet" href="css/style.css"
+    <link rel="icon" href="img/jw-logo.png" type="image/icon" type>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div id="branding">
-          <!--Replace with logo when finished-->
-          <h1><span class="highlight">J</span>onathan <span class="highlight">W</span>hite</h1>
-        </div>
-        <nav>
-          <ul>
-            <li class="current"><a href="index.html">Portfolio</a></li>
-            <li><a href="bio.html">Bio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
+    <nav>
+      <div class="branding">
+        <img src="img/jw-logo.png">
       </div>
-    </header>
-    <section id="showcase">
-      <div class="container">
-        <h1>Jonathan White</h1>
-        <p>Front End Developer</p>
+
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a download href="jw-web-developer.pdf">Resume</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Hello, my name is Jonathan White</h1>
+        <p>And I'm a Front-End Developer<br></p>
+        <a href="https://github.com/jonathancwhite" target="_blank"><span class="social-icons"><i class="fab fa-github"></i></span></a>
+        <a href="https://linkedin.com/in/jonathanclwhite" target="_blank"><span class="social-icons"><i class="fab fa-linkedin-in"></i></span></a>
       </div>
-    </section>
-    <!--Add Section -->
-    <section id="description">
-      <div class="container">
-        <p>Throughout this site, you will find some elements of HTML with stylization done with CSS. All code for this project has been completed on 6/25/2019.</p>
+    </div>
+    
+
+    <div class="project-title" id="projects">
+      <h3>Projects</h3>
+    </div>
+    <div class="project-showcase">
+      <div class="project">
+        <!--ONCE HOSTED WILL ADD LINK TO PAGE-->
+        <img src="img/sn-instagram-hover.png">
+        <p>Southern Nutrition - Concept</p>
+        <a href="southern-nutrition.html" target="_blank"><p class="demo-button">Demo</p></a>
+        <p class="demo-button">Details</p>
       </div>
-    </section>
-    <section id="boxes">
-      <div class="container">
-        <div class="box">
-            <a href="https://yournerdfriends.com" target="_blank"><img src="img/screenshot_yournerdfriends.png"></a>
-          <h3>Your Nerd Friends</h3>
-          <p>IT Support Startup with a focus on same-day repairs. Project was cancelled. Platform used: Wordpress with custom HTML and CSS.</p>
-        </div>
-        <div class="box">
-            <a href="https://mtcommodoreame.com" target="_blank"><img src="img/screenshot_breakfast_church.png"></a>
-          <h3>Mt. Commodore AME Church</h3>
-          <p>Website for a church located in Georgia. Church requested an easy to edit platform, that way they could have others edit if necessary. Platform used: Wix.</p>
-        </div>
-        <div class="box">
-          <a href="#"><img src="img/sn-instagram-hover.png"></a>
-          <h3>Southern Nutrition Concept</h3>
-          <p>Concept Design for Southern Nutrition. Only hosted locally due to not having the rights. Languages: HTML, CSS, and JavaScript</p>
-        </div>
+      <div class="project">
+        <img src="img/screenshot_yournerdfriends.png">
+        <p>Your Nerd Friends - Startup (CANCELLED)</p>
+        <a href="https://www.yournerdfriends.com" target="_blank"><p class="demo-button">Demo</p></a>
+        <p class="demo-button">Details</p>
       </div>
-    </section>
+      <div class="project">
+        <img src="img/screenshot_breakfast_church.png">
+        <p>Mt. Commodore AME Church - Full Site</p>
+        <a href="https://mtcommodoreame.com" target="_blank"><p class="demo-button">Demo</p></a>
+        <p class="demo-button">Details</p>
+      </div>
+      <div class="project">
+        <img src="img/sn-home-screen.png">
+        <p>Filler Image - Filler</p>
+        <p class="demo-button">Demo</p>
+        <p class="demo-button">Details</p>
+      </div>
+      <div class="project">
+          <img src="img/sn-home-screen.png">
+          <p>Filler Image - Filler</p>
+          <p class="demo-button">Demo</p>
+          <p class="demo-button">Details</p>
+        </div>
+        <div class="project">
+            <img src="img/sn-home-screen.png">
+            <p>Filler Image - Filler</p>
+            <p class="demo-button">Demo</p>
+            <p class="demo-button">Details</p>
+          </div>
+    </div>
+    <hr> <!-- Could add a picture here? some type of split -->
+    <div class="about-me" id="about">
+        <h3 class="about-title">About Me</h3>
+      <p>
+        I am a freelance web developer who is currently attending Auburn University to receive a Bachelors in Computer Science.
+        My original goal with my education was to focus on Cybersecurity because I thought that I could be some cool hacker guy that shows portray.
+        However, when I began my journey at Auburn I noticed that Software Engineering/Computer Science is much harder than movies and TV shows make it out to be.
+        There are countless amount of hours of practice you need to put in on top of the assignments that are due every week. While the projects are enjoyable and the information is very intriguing, my struggle for making rent every month led me to take on a side-hustle in web design.<br><br>
+        I first got into web design because I wanted to make a personal website for my gaming career and didn't have the money to pay someone to make one for me.
+        I spent countless hours watching YouTube tutorials and reading books on HTML and CSS.
+        Every moment that I could spend working on learning to code my own website, I did just that.
+        Now after two years or so of small projects, I have decided to further my search for information and experience in web development.
+      </p>
+    </div>
+    <hr>
+
+    <div class="ending">
+      <h3>Please Excuse My Mess</h3>
+      <p>I am currently still working on this section</p>
+    </div>
+    
     <footer>
-      <p>Jonathan White, Copyright &copy; 2019</p>
+      <div class="footer-grid">
+        <div class="left">
+          <h3>Connect With Me</h3>
+          <a href="https://github.com/jonathancwhite" target="_blank"><span class="social-icons-footer"><i class="fab fa-github"></i></span>
+            <span class="social-titles">GitHub</span></a><br>
+          <a href="https://linkedin.com/in/jonathanclwhite" target="_blank"><span class="social-icons-footer"><i class="fab fa-linkedin-in"></i></span>
+          <span class="social-titles">LinkedIn</span></a>
+        </div>
+        <div class="right">
+          <!-- Add in Resume Again & Possibly Contact -->
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; Jonathan White - Web Developer</p>
+      </div>
     </footer>
   </body>
 </html>
