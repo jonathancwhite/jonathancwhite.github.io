@@ -156,6 +156,10 @@ nav {
     transform: scale(1);
 }
 
+.project:hover img {
+    transform: scale(1.1);
+}
+
 .demo-button {
     background: rgb(30, 94, 190);
     margin-left: 150px;
@@ -166,10 +170,62 @@ nav {
     color: white;
 }
 
-.about-title {
-    margin-top: 50px;
-    padding-top: 40px;
+.about-me-section {
+    padding-top: 20px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    width: 80%;
+    margin: auto;
+}
+
+.picture-and-socials {
+    min-height: 40em;
+    width: 15em;
+    margin: auto;
+    background: rgb(226, 226, 226);
     margin-bottom: 50px;
+}
+
+.picture-and-socials img{
+    display: block;
+    padding: 20px 20px 20px 20px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.about-socials {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.social-icons-2 {
+    color:rgb(87, 87, 87);
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+.picture-and-socials p{
+    width: 70%;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.skills-1{
+    text-align: center;
+    color: rgb(37, 37, 37);
+    text-decoration: underline;
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.about-title {
+    padding-top: 15px;
     text-align: center;
     color: rgb(87, 87, 87);
     text-decoration: none;
@@ -179,8 +235,9 @@ nav {
 }
 
 .about-me {
-    width: 40%;
+    min-height: 40em;
     margin: auto;
+    margin-top: 40px;
     background: rgb(226, 226, 226);
     margin-bottom: 50px;
 }
@@ -188,10 +245,19 @@ nav {
 .about-me p {
     width: 90%;
     margin: auto;
+    padding-top: 20px;
     padding-bottom: 40px;
 }
 
-.ending h3{
+.ending {
+    width: 40%;
+    margin: auto;
+    background: rgb(226, 226, 226);
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.contact-title h3{
     margin-top: 10px;
     padding-top: 40px;
     margin-bottom: 50px;
@@ -203,15 +269,50 @@ nav {
     text-transform: uppercase;
 }
 
-.ending p{
+.project-details-sec {
+    width: 40%;
+    margin: auto;
+    background: rgb(226, 226, 226);
+    margin-bottom: 60px;
+    margin-top: 60px;
+    padding-bottom: 25px;
+}
+
+.project-details h5{
     text-align: center;
-    padding-bottom: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgb(10, 10, 10);
+    text-decoration: underline;
+}
+
+.project-details li{
+    list-style: none;
+    width: 90%;
+}
+
+.li-bold {
+    font-weight: bold;
+}
+
+/* Project Details */
+.details-title h3{
+    margin-top: 50px;
+    padding-top: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: rgb(87, 87, 87);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 18px;
+    text-transform: uppercase;
 }
 
 .footer-grid {
     padding-top: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 30% 40%;
     width: 80%;
     margin: auto;
 }
@@ -246,12 +347,38 @@ nav {
     text-transform: uppercase;
 }
 
+.social-titles:hover {
+    font-weight: bold;
+    color: rgb(165, 165, 165);
+}
+
+.right h3 {
+    color: rgb(87, 87, 87);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.right a{
+    color: rgb(109, 109, 109);
+    text-decoration: none;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.right a:hover{
+    font-weight: bold;
+    color: rgb(165, 165, 165);
+}
+
 .copyright {
     text-align: center;
     font-size: 12px;
     padding-top: 15px;
     padding-bottom: 10px;
 }
+
 
 /* Footer */
 footer{
@@ -261,6 +388,7 @@ footer{
     text-align: left;
     margin-top: 10px;
     clear: both;
+    border-top: #00aeef 3px solid;
 }
 
 footer p{
