@@ -16,6 +16,8 @@ nav {
     border-bottom: #00aeef 3px solid;
 }
 
+/* ADD MEDIA QUERY FOR NAV BAR */
+
 .branding img{
     margin-left: 20px;
     margin-top: 10px;
@@ -172,10 +174,10 @@ nav {
 
 .about-me-section {
     padding-top: 20px;
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: 30% 60%;
-    width: 80%;
+    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
     margin: auto;
 }
 
@@ -224,8 +226,16 @@ nav {
     text-transform: uppercase;
 }
 
-.about-title {
-    padding-top: 15px;
+.skills-title {
+    text-align: center; 
+    color: rgb(87, 87, 87);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.about-title h3 {
     text-align: center;
     color: rgb(87, 87, 87);
     text-decoration: none;
@@ -234,15 +244,15 @@ nav {
     text-transform: uppercase;
 }
 
-.about-me {
-    min-height: 40em;
+#about-me-text {
+    min-height: 39em;
     margin: auto;
     margin-top: 40px;
     background: rgb(226, 226, 226);
     margin-bottom: 50px;
 }
 
-.about-me p {
+#about-me-text p {
     width: 90%;
     margin: auto;
     padding-top: 20px;
