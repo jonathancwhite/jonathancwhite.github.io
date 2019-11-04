@@ -1,0 +1,231 @@
+@import url(//db.onlinewebfonts.com/c/465b1cbe35b5ca0de556720c955abece?family=AbolitionW00-Regular);
+@import url(//db.onlinewebfonts.com/c/011bf6877bf6908c6d43a19ccbb78154?family=Roboto+Mono);
+@import url(//db.onlinewebfonts.com/c/0033a2fbc0329740fb86c1cfd134cb94?family=Roboto);
+@import url(//db.onlinewebfonts.com/c/1c587cd97662ab09cb8ba96867f212e7?family=DINOT-Regular);
+
+@font-face {
+    font-family: "Abolition";
+    src: url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.eot");
+    src: url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.svg#AbolitionW00-Regular") format("svg");
+}
+
+@font-face {
+    font-family: "RobotoMono";
+    src: url("//db.onlinewebfonts.com/t/011bf6877bf6908c6d43a19ccbb78154.eot");
+    src: url("//db.onlinewebfonts.com/t/011bf6877bf6908c6d43a19ccbb78154.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/011bf6877bf6908c6d43a19ccbb78154.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/011bf6877bf6908c6d43a19ccbb78154.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/011bf6877bf6908c6d43a19ccbb78154.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/011bf6877bf6908c6d43a19ccbb78154.svg#Roboto Mono") format("svg");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot");
+    src: url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.svg#Roboto") format("svg"); 
+}
+
+@font-face {
+    font-family: "Dinot";
+    src: url("//db.onlinewebfonts.com/t/1c587cd97662ab09cb8ba96867f212e7.eot");
+    src: url("//db.onlinewebfonts.com/t/1c587cd97662ab09cb8ba96867f212e7.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/1c587cd97662ab09cb8ba96867f212e7.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/1c587cd97662ab09cb8ba96867f212e7.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/1c587cd97662ab09cb8ba96867f212e7.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/1c587cd97662ab09cb8ba96867f212e7.svg#DINOT-Regular") format("svg");
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #9d8959;
+    font-family: RobotoMono, Roboto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 4vh;
+    background-color: #0f0f0f;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: #9d8959 3px solid;
+}
+
+/* ADD MEDIA QUERY FOR NAV BAR */
+
+.branding img{
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: rgb(245, 245, 245);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover{
+    color: #9d8959;
+    font-weight: bold;
+}
+
+.current a {
+    color: #9d8959;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.li-bold {
+    font-weight: bold;
+}
+
+/* Advert Section */
+.showcase {
+    max-height: 100vh;
+    margin-bottom: 0px;
+}
+
+.showcase img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* About Section */
+.about-section {
+    background-color: #9d8959;
+    padding-top: 20px;
+    border-top: #0f0f0f 3px solid;
+}
+
+.about-section img{
+    padding-top: 30px;
+    height: 400px;
+    width: 600px;
+    margin-left: 30%;
+    margin-right: auto;
+}
+
+.about-title {
+    padding-top: 10px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-title h4 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: Dinot;
+}
+
+.main-title {
+    font-family: Abolition, RobotoMono;
+    font-size: 52px;
+}
+
+.about-body {
+    width: 40%;
+    margin: 60px auto 0 auto;
+    padding-bottom: 40px;
+    font-family: Dinot;
+    letter-spacing: 4px;
+    font-kerning: 2px;
+    font-weight: bold;
+}
+
+/* ROSTER PAGE */
+.showcase-roster {
+    min-height: 100vh;
+}
+
+.showcase-roster img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.roster-announcements {
+    background-color: #9d8959;
+    
+}
+
+.roster-announcements h1 {
+    font-family: Abolition, RobotoMono;
+    font-size: 52px;
+    letter-spacing: 4px;
+    text-align: center; 
+}
+
+.roster-videos {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    background-color: #0f0f0f;
+    border-top: #20522d 3px solid;
+}
+
+.footer-content {
+    text-align: center;
+    margin-top: 30px;
+}
+.social-icons-footer {
+    font-size: 2em;
+    color: #9d8959;
+}
+
+.social-icons-footer-right {
+    font-size: 2em;
+    color: #9d8959;
+    margin-left: 20px;
+}
+
+.footer a:hover{
+    font-weight: bold;
+    color: rgb(165, 165, 165);
+}
+
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    color: rgb(245, 245, 245);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
